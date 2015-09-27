@@ -3,17 +3,69 @@
 <html>
     <head>
     <title>Git Test</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
     </head>
 
 <body>
-    <ul>
-        <li>1</li>
-        <li>3</li>
-        <li>2</li>
-        <li>4</li>
-    </ul>
+    <div class="container">
+        <header id="index">
+            <nav>
+                <ul>
+                <a href="#home"><li>Home</li></a>
+                <a href="#about"><li>Home</li></a>
+                <a href="#gallery"><li>Home</li></a>
+                <a href="#contact"><li>Home</li></a>
+                
+                </ul>
+            
+            </nav>
+        
+        </header>
+        
+        <div id="home">
+        
+        </div>
+        
+          <div id="about">
+        
+        </div>
+        
+          <div id="gallery">
+        
+        </div>
+        
+        <div id="contact">
+        
+        </div>
+
+        <div id="footer">
+            <a href="#home" class="go_top"> Go To Top</a>
+        </div>
+
+    </div>
     
     
 </body>
-
+    
+   <script src="jquery-1.11.3.js"></script>
+    <script>
+        $(document).ready(function() {
+           // Show or hide button.
+            $(window).scroll(function() {
+               if($(this).scrollTop() > 200) {
+                   $(".go_top").fadeIn(500);
+               } else { 
+                   $(".go_top").fadeOut(500);
+               }
+            });
+            
+            //Scroll animation to top of page.
+            $(".go_top").click(function(event) {
+             event.preventDefault();
+                
+                $("html, body").animate({scrollTop:0},400)
+            })
+                });
+    </script>
+    
 </html>
