@@ -46,6 +46,13 @@ height: 800px;
 background-color:orange;
 }
 
+#funstuff {
+ width: 960px;
+height: 800px;
+    float: left;
+background-color:purple;
+}
+
 #contact {
  width: 960px;
 height: 800px;
