@@ -1,86 +1,79 @@
 .container {
-    width: 960px;
+ width: 960px;
     margin: auto;
 }
 
 body {
-    background-color: lightgray;
+background-size: 100%;
+background-repeat: no-repeat;
+    background-color: darkgray;
 }
 
 #index {
-    position: fixed;
+        position: fixed;
     top: 0px;
-    width: 960px;
-    height: 50px;
+ width: 960px;
+height: 50px;
     background-color: black;
 }
 
 ul li {
  float: left;
- list-style: none;
-margin: 10px 20px 0px 20px;
-    
+    list-style: none;
+    margin: 10px 20px 0px 20px;
 }
 
 ul a {
- color: white;
-    
+ color: white;   
 }
 
 ul a:hover {
- color: dimgray;
+ color: gray;   
 }
 
-#home {
- width: 960px;
- height: 800px;
- float: left;
-  background-color: aqua;
+#content {
+width: 960px;
+height: 800px;
+    float: left;
+background-color:yellow;
+    
 }
 
 #about {
  width: 960px;
- height: 800px;
- float: left;
-  background-color: lightblue;
-}
-
-#gallery {
- width: 960px;
- height: 800px;
- float: left;
-  background-color: lightskyblue;
+height: 800px; 
+    float: left;
+background-color:orange;
 }
 
 #contact {
  width: 960px;
- height: 800px;
- float: left;
-  background-color: lightcyan;
+height: 800px;
+    float: left;
+background-color:red;
 }
 
 #footer {
  width: 960px;
 height: 100px;
     float: left;
-    background-color: black;
+background-color:black;
 }
 
 .go_top {
-position: fixed;
-bottom: 5px;
-right: 25px;
-width: 100px;
-height: 20px;
-color: white;
-background-color: black;
-text-decoration: none;
-text-align: center;
-display: none;
-border: 3px solid blue;
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+    width: 50px;
+    height:50px;
+    background-image:url("content/up_button.svg");
+    text-decoration: none;
+    display: none;
+    
 }
 
 .go_top:hover {
- color: black;
-background-color: azure;
+   background-position: -50px 0px;
+    
+       
 }
